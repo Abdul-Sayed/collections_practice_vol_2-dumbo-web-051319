@@ -2,18 +2,18 @@ require 'spec_helper'
 
 describe 'collections practice vol 2.' do
 
-  let(:keys) {
-    [
-        {
-            :first_name => "blake",
-                 :motto => "Have a koala-ty day!"
-        },
-        {
-            :first_name => "ashley",
-                 :motto => "I dub thee, 'Lady Brett Ashley'."
-        }
-    ]
-  }
+  let(:keys) 
+  
+  [
+	{
+		:first_name => "blake",
+		:motto => "Have a koala-ty day!"
+	},
+	{
+		:first_name => "ashley",
+		:motto => "I dub thee, 'Lady Brett Ashley'."
+	}
+]
 
   let(:data) {
     [
