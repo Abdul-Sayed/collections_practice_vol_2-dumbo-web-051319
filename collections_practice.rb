@@ -144,6 +144,13 @@ end
 
 ########################################################################################
 
+# Note: I have modified the test argument to this method to be a proper Ruby data structure
 
-
+def find_cool(cool)
+	for obj in cool
+		obj.each { |key, value|
+			return obj if (value == "cool")
+		}
+	end 
+end
 
