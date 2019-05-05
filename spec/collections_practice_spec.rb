@@ -53,7 +53,7 @@ describe 'collections practice vol 2.' do
   #   ]
   # }
 
-  keys =	[
+keys =	[
 	{
 		:first_name => "blake",
 		:motto => "Have a koala-ty day!"
@@ -106,6 +106,17 @@ merged_data = [
   #       }
   #   ]
   # }
+  
+cool = [
+	{
+		:name => "ashley",
+		:temperature => "sort of cool"
+	},
+	{
+		:name => "blake",
+		:temperature => "cool"
+	}
+]
 
   let(:schools) {
     {
