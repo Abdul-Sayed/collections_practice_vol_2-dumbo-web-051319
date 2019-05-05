@@ -87,6 +87,8 @@ end
 
 ##################################################################
 
+# Note: I have modified the test arguments to this method to be proper Ruby data structures
+
 def merge_data(keys, data)
 
 	keys_array = []
@@ -139,5 +141,9 @@ def merge_data(keys, data)
 	return merged
 
 end
+
+########################################################################################
+
+
 
 
