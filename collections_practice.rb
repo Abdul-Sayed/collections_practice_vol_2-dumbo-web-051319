@@ -87,6 +87,57 @@ end
 
 ##################################################################
 
+def merge_data(keys, data)
 
+	keys_array = []
+	values_array = []
+
+	keys.each { |elem|
+		elem.each { |k,v|
+			keys_array << k
+			values_array << v
+		}
+	}
+
+	data.each { |k,v|
+		v.each { |k,v|
+			keys_array << k
+			values_array << v
+		}
+	}
+
+	print keys_array
+	puts ""
+	print values_array
+	puts ""
+	print "\n"
+
+	structure_1 = { 
+		keys_array[0] =>  values_array[0],
+		keys_array[4] =>  values_array[4],
+		keys_array[5] =>  values_array[5],
+		keys_array[6] =>  values_array[6],
+		keys_array[1] =>  values_array[1],
+	}
+	structure_2 = { 
+		keys_array[0] =>  values_array[2],
+		keys_array[4] =>  values_array[7],
+		keys_array[5] =>  values_array[8],
+		keys_array[6] =>  values_array[9],
+		keys_array[1] =>  values_array[3],
+	}
+
+	pp structure_1
+	puts ""
+	pp structure_2
+	puts ""
+	print "\n"
+
+	merged  = [ structure_1, structure_2 ]
+
+	pp merged
+	return merged
+
+end
 
 
