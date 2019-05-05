@@ -147,10 +147,12 @@ end
 # Note: I have modified the test argument to this method to be a proper Ruby data structure
 
 def find_cool(cool)
+	cool_hashes = []
 	for obj in cool
 		obj.each { |key, value|
-			return obj if (value == "cool")
+			cool_hashes << obj if (value == "cool")
 		}
 	end 
+	return cool_hashes
 end
 
