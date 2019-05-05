@@ -158,6 +158,8 @@ end
 
 ########################################################################################
 
+# Note: I have modified the test argument to this method and expected output to be a proper Ruby data structure
+
 def organize_schools(schools)
 	nyc_schools = []
 	sf_schools = []
@@ -191,17 +193,6 @@ def organize_schools(schools)
 			end
 		}
 	}
-
-	print nyc_schools
-	print "\n" 
-	puts ""
-	print sf_schools
-	print "\n" 
-	puts ""
-	print chicago_schools
-	print "\n" 
-	puts ""
-	pp organized_schools
 
 	return organized_schools
 
