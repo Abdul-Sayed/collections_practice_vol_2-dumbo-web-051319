@@ -94,18 +94,18 @@ merged_data = [
 	}
 ]
 
-  let(:cool) {
-    [
-            {
-                   :name => "ashley",
-            :temperature => "sort of cool"
-        },
-            {
-                   :name => "blake",
-            :temperature => "cool"
-        }
-    ]
-  }
+  # let(:cool) {
+  #   [
+  #           {
+  #                 :name => "ashley",
+  #           :temperature => "sort of cool"
+  #       },
+  #           {
+  #                 :name => "blake",
+  #           :temperature => "cool"
+  #       }
+  #   ]
+  # }
 
   let(:schools) {
     {
