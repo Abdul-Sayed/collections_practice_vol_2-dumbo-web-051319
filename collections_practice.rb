@@ -156,3 +156,55 @@ def find_cool(cool)
 	return cool_hashes
 end
 
+########################################################################################
+
+def organize_schools(schools)
+	nyc_schools = []
+	sf_schools = []
+	chicago_schools = []
+	organized_schools = [{}]
+
+	schools.each { |school, location_data|
+		
+		location_data.each { |k, city|
+			
+			case city
+				when "NYC"
+					nyc_schools << school
+				when "SF"
+					sf_schools << school
+				when "Chicago"
+					chicago_schools << school
+			end
+		}
+	}
+
+	schools.each { |school, location_data|
+		location_data.each { |k, city|	
+			case city
+				when "NYC"
+					organized_schools[0][city] = nyc_schools
+				when "SF"
+					organized_schools[0][city] = sf_schools
+				when "Chicago"
+					organized_schools[0][city] = chicago_schools
+			end
+		}
+	}
+
+	print nyc_schools
+	print "\n" 
+	puts ""
+	print sf_schools
+	print "\n" 
+	puts ""
+	print chicago_schools
+	print "\n" 
+	puts ""
+	pp organized_schools
+
+	return organized_schools
+
+end
+
+
